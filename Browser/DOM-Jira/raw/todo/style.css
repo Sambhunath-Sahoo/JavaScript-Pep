@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  background-color: rgb(37, 186, 255);
+}
+.input-container {
+  height: 15vh;
+  border: 2px solid green;
+}
+.main-container {
+  border: 1px solid green;
+  font-family: "Crimson Text", serif;
+  color: white;
+  text-align: center;
+}
+.action {
+  font-size: 1.5rem;
+}
+.task-list{
+    padding-left: 0;
+}
+.task {
+list-style: none;
+  height: 2rem;
+  width: 70%;
+  background-color: rgba(39, 68, 107, 0.521);
+}
