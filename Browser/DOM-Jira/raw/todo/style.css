@@ -1,26 +1,50 @@
-body {
-  margin: 0;
-  background-color: rgb(37, 186, 255);
+*{
+  /* box size will not be change */
+  box-sizing: border-box;
 }
-.input-container {
-  height: 15vh;
-  border: 2px solid green;
+body{
+  margin: 0;
+  background-color: rgb(50, 79, 207);
+  font-size: 2.2rem;
+}
+li{
+  list-style: none;
+}
+.input-box{
+  display: block;
+  height: 80%;
+  width: 40vw;
+  margin: 0 auto;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1.5rem 1.5rem;
 }
 .main-container {
-  border: 1px solid green;
-  font-family: "Crimson Text", serif;
-  color: white;
+  padding-top: 2rem;
+  font-family: 'Karantina', cursive;
+  color: rgb(255, 255, 255);
   text-align: center;
 }
-.action {
-  font-size: 1.5rem;
+.task-list {
+  padding-left: 0;
 }
-.task-list{
-    padding-left: 0;
+.action{
+  background-color: green;
+  width: 60%;
+  margin: 0 auto;
 }
 .task {
-list-style: none;
   height: 2rem;
-  width: 70%;
-  background-color: rgba(39, 68, 107, 0.521);
+  width: 60%;
+  background-color: rgb(50, 195, 224);
+  margin: 0 auto;
+  margin-top: 01.5rem;
+}
+
+/* media queries -> screen size */
+@media only screen and (max-width: 800px) {
+  .input-box {
+      width: 60vw;
+  }
 }
