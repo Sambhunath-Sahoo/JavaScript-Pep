@@ -11,7 +11,7 @@ let cTab;
         let browser = await browserOpenPromise;
         let allTabsArr = await browser.pages();
         cTab = allTabsArr[0];
-
+        
         await cTab.goto("https://www.facebook.com/");
         await cTab.type("input[type='text']", "9078164602", { delay: 200 });
         await cTab.type("input[type='password']", "7381976641", { delay: 200 });
