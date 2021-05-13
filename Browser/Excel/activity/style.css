@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+}
+
+/* menu container */
+.menu-container {
+  height: 4rem;
+  background-color: rgb(137, 248, 196);
+}
+
+/* formula container */
+.formula-container {
+  height: 2rem;
+  background-color: rgb(238, 85, 85);
+}
+
+
+/* grid container */
+.grid-container {
+  height: calc(100vh - (4rem + 2rem + 2rem)); /*give rest of the space to grid*/
+  background-color: rgb(196, 233, 233);
+  overflow: auto;
+}
+.left_box{
+    background-color: rgb(105, 99, 107);
+}
+.top_row{
+    height: 2rem;
+    display: flex;
+}
+.grid{
+    background-color: rgb(223, 244, 245);
+}
+.box {
+  height: 2rem; 
+  width: 2rem;
+  border: 1px solid;
+  text-align: center;
+}
+.cell{
+    border: 1px solid;
+    min-width: 4rem;
+    text-align: center;
+}
+.row {
+    display: flex;
+}
+
+
+
+
+
+
+/* sheet container */
+.sheets-container {
+  height: 2rem;
+  background-color: rgb(112, 111, 111);
+  display: flex;
+}
+.add-sheet_btn-container {
+  width: 3rem;
+  border: 1px solid;
+  height: 100%;
+  padding-top: 0.2rem;
+  padding-left: 0.3rem;
+}
+.fas{
+    padding-top: .1rem;
+    padding-left: .5rem;
+}
+.sheet-list {
+  width: calc(100vw - 3rem);
+  border: 1px solid;
+  display: flex;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox (src="https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp")*/
+.sheet-list::-webkit-scrollbar {
+  display: none;
+}
+.sheet-list {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.sheet {
+  min-width: 5rem; /* to give a scrollbar */
+  border: 1px solid blue;
+  height: 100%;
+  padding-top: 0.1rem;
+  text-align: center;
+}
+.active {
+  background-color: #fff;
+}

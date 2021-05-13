@@ -1,45 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Excel Clone</title>
+</head>
+<body>
+
     <div class="menu-container">menu</div>
+
+    
     <div class="formula-container">formula</div>
+    
+    
     <div class="grid-container">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, doloribus cum
-      optio ipsa minus saepe fuga. Asperiores fuga modi quia magni dignissimos
-      tempore similique, voluptatum nulla perferendis accusamus eum corporis
-      consequatur dolorum quas vero architecto ducimus nam, ex voluptas repellat
-      sit? Reiciendis rerum omnis minima, doloremque eos eligendi aspernatur
-      placeat incidunt? Officiis nisi itaque modi aliquam sed placeat,
-      repellendus explicabo voluptatum suscipit repellat et aspernatur dolore
-      provident alias laudantium, impedit, nihil ipsum dignissimos iure debitis
-      quae assumenda eaque nesciunt esse! Fuga repellat exercitationem illum
-      laboriosam veritatis ratione voluptatibus nisi eligendi ea debitis, fugit
-      quam autem neque possimus fugiat consequuntur? Similique.
+        <div class="left_box box">
+            <!-- fixed box -->
+        </div>
+        <div class="top_row">
+            <!-- will be added from grid.js  -->
+        </div>
+        <div class="left_col">
+            <!-- will be added from grid.js  -->
+        </div>
+        <div class="grid">
+            <!-- will be added from grid.js  -->
+        </div>
     </div>
+    
+    
     <div class="sheets-container">
-      <div class="sheet-content">
         <div class="add-sheet_btn-container">
-          <i class="fas fa-plus"></i>
+            <i class="fas fa-plus"></i>
         </div>
         <div class="sheet-list">
-          <div class="sheet active" idx="0">sheet 1</div>
+            <div class="sheet active" idx="0">sheet 1</div>
+            <!-- more sheets will be added -->
         </div>
-      </div>
     </div>
-    <hr>
-    <div class="sheet-bottom"></div>
 
+    <script src="grid.js"></script>
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
