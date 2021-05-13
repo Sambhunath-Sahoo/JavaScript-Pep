@@ -1,6 +1,5 @@
 let btnContainer = document.querySelector(".add-sheet_btn-container");
 let sheetList = document.querySelector(".sheet-list");
-
 // to make firstSheet active when clicked
 let firstSheet = document.querySelector(".sheet");
 firstSheet.addEventListener("click", makeMeActive);
@@ -33,6 +32,7 @@ btnContainer.addEventListener("click", function () {
     // attach a "addEventListener" on every new sheet to do operation(active) 
     Newsheet.addEventListener("click", makeMeActive)
 })
+
 
 
 // function to make active when user clicked on the sheet

@@ -5,56 +5,134 @@ body {
   margin: 0px;
 }
 
-/* menu container */
+
+
+
+
+
+/* ***********************menu container*********************** */
 .menu-container {
   height: 4rem;
-  background-color: rgb(137, 248, 196);
+  background-color: rgb(12, 110, 65);
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  gap: 0.5rem;
 }
-
-/* formula container */
-.formula-container {
-  height: 2rem;
-  background-color: rgb(238, 85, 85);
-}
-
-
-/* grid container */
-.grid-container {
-  height: calc(100vh - (4rem + 2rem + 2rem)); /*give rest of the space to grid*/
-  background-color: rgb(196, 233, 233);
-  overflow: auto;
-}
-.left_box{
-    background-color: rgb(105, 99, 107);
-}
-.top_row{
-    height: 2rem;
-    display: flex;
-}
-.grid{
-    background-color: rgb(223, 244, 245);
-}
-.box {
-  height: 2rem; 
-  width: 2rem;
+.menu-container > * {
   border: 1px solid;
+  height: 40%;
+}
+.font-size{
+  width: 5%;
+}
+.font-family{
+  width: 13%;
+}
+.bui-container{
+  width: 12%;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  border: none;
+}
+.bui-container>*{
+  width: 30%;
+  height: 80%;
   text-align: center;
 }
-.cell{
-    border: 1px solid;
-    min-width: 4rem;
-    text-align: center;
+.align-container{
+  width: 12%;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  border: none;
+}
+.align-container>*{
+  width: 30%;
+  height: 80%;
+  text-align: center;
+}
+.color-container{
+  width:10%;
+  display: flex;
+  border: none;
+  gap: .5rem;
+}
+
+
+
+
+
+/* *******************************formula container*********************** */
+.formula-container {
+  height: 2rem;
+  background-color: rgb(209, 204, 204);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.formula-container > * {
+  height: 70%;
+}
+.address-input {
+  width: 4rem;
+}
+.formula-input {
+  width: calc(100vw - 6rem);
+}
+
+
+
+
+
+
+/* *****************************grid container*************************** */
+.grid-container {
+  position: relative;
+  height: calc(100vh - (4rem + 2rem + 2rem)); /*give rest of the space to grid*/
+  background-color: rgb(200, 207, 207);
+  overflow: auto;
+}
+.left_box {
+  background-color: rgb(173, 173, 173);
+}
+.top_row {
+  left: 2rem;
+  top: 0rem;
+  position: absolute;
+  height: 2rem;
+  display: flex;
+}
+.grid {
+  background-color: rgb(245, 245, 245);
+  left: 2rem;
+  top: 2rem;
+  position: absolute;
+}
+.box {
+  height: 2rem;
+  width: 2rem;
+  border: 0.1px solid #cfd6d9;
+  background-color: rgb(201, 201, 206);
+  padding-top: 0.4rem;
+  text-align: center;
+}
+.cell {
+  border: 0.1px solid #c0bdbd;
+  min-width: 5rem;
+  text-align: center;
+  height: 2rem;
 }
 .row {
-    display: flex;
+  display: flex;
 }
 
 
 
 
 
-
-/* sheet container */
+/* ********************************sheet container******************************** */
 .sheets-container {
   height: 2rem;
   background-color: rgb(112, 111, 111);
@@ -67,9 +145,9 @@ body {
   padding-top: 0.2rem;
   padding-left: 0.3rem;
 }
-.fas{
-    padding-top: .1rem;
-    padding-left: .5rem;
+.fas {
+  padding-top: 0.1rem;
+  padding-left: 0.5rem;
 }
 .sheet-list {
   width: calc(100vw - 3rem);
@@ -79,7 +157,8 @@ body {
   overflow: auto;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox (src="https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp")*/
+/* Hide scrollbar for IE, Edge and Firefox 
+ (src="https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp")*/ 
 .sheet-list::-webkit-scrollbar {
   display: none;
 }
