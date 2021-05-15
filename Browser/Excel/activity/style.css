@@ -30,7 +30,7 @@ body {
   width: 13%;
 }
 .bui-container{
-  width: 12%;
+  min-width: 12%;
   display: flex;
   justify-content:space-around;
   align-items: center;
@@ -42,7 +42,7 @@ body {
   text-align: center;
 }
 .align-container{
-  width: 12%;
+  min-width: 12%;
   display: flex;
   justify-content:space-around;
   align-items: center;
@@ -54,11 +54,17 @@ body {
   text-align: center;
 }
 .color-container{
-  width:10%;
+  min-width:10%;
   display: flex;
   border: none;
   gap: .5rem;
 }
+
+/* new open save */
+.nos-container > * {
+  border: none;
+}
+
 
 
 
@@ -121,6 +127,7 @@ body {
 .cell {
   border: 0.1px solid #c0bdbd;
   min-width: 5rem;
+  padding-top: .3rem;
   text-align: center;
   height: 2rem;
 }
@@ -177,3 +184,9 @@ body {
 .active {
   background-color: #fff;
 }
+.active-btn {
+  background-color: red;
+}
+
+
+
